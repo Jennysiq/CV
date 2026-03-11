@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eugeny Semashko - DevOps Engineer</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+        :root {
+            --primary: #0f172a;
+            --accent: #2563eb;
+            --text: #334155;
+            --text-light: #64748b;
+            --bg: #f8fafc;
+        }
+
+        * { box-sizing: border-box; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #f1f5f9;
+            margin: 0;
+            padding: 25px 0;
+            color: var(--text);
+            line-height: 1.45;
+            -webkit-print-color-adjust: exact;
+        }
+
+        .page {
+            background: white;
+            width: 210mm;
+            min-height: 297mm;
+            margin: 0 auto;
+            padding: 35px 45px;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+        }
+
+        header {
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        h1 { font-size: 32px; margin: 0; color: var(--primary); font-weight: 700; }
+        .job-title { font-size: 19px; color: var(--accent); font-weight: 600; margin-top: 4px; }
+
+        .contact { text-align: right; font-size: 13px; color: var(--text); }
+        .contact p { margin: 2px 0; }
+        .contact a { color: var(--accent); text-decoration: none; font-weight: 500; }
+
+        .summary { font-size: 12.5px; margin-bottom: 20px; background: #eff6ff; padding: 12px; border-radius: 6px; border-left: 4px solid var(--accent); line-height: 1.55; }
+
+        .grid { display: grid; grid-template-columns: 1.8fr 1.2fr; gap: 30px; }
+
+        h2 { font-size: 12.5px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--primary); border-bottom: 1px solid #e2e8f0; padding-bottom: 5px; margin-bottom: 12px; font-weight: 700; }
+
+        .exp-item { margin-bottom: 18px; }
+        .exp-header { display: flex; justify-content: space-between; font-weight: 700; font-size: 15px; color: var(--primary); }
+        .role { font-weight: 600; color: var(--accent); font-size: 13.5px; margin: 2px 0; }
+        .comp-info { font-size: 11px; color: var(--text-light); font-style: italic; margin-bottom: 5px; }
+
+        ul { margin: 4px 0; padding-left: 15px; }
+        li { margin-bottom: 3px; font-size: 12.5px; color: var(--text); }
+
+        .side-section { margin-bottom: 18px; }
+        .skill-cat { margin-bottom: 10px; }
+        .skill-cat strong { display: block; font-size: 10px; text-transform: uppercase; color: var(--text-light); margin-bottom: 4px; letter-spacing: 0.05em; }
+        .skill-tags { display: flex; flex-wrap: wrap; gap: 4px; }
+        .skill-tags span { background: #f1f5f9; padding: 2px 7px; border-radius: 4px; font-size: 11px; color: #1e293b; border: 1px solid #e2e8f0; font-weight: 500; }
+
+        .future-focus { background: #faf5ff; padding: 10px; border-radius: 6px; border-left: 3px solid #a855f7; margin-top: 15px; }
+        .future-focus strong { font-size: 10px; color: #7e22ce; display: block; margin-bottom: 4px; text-transform: uppercase; }
+        .future-focus p { margin: 0; font-size: 10.5px; color: #581c87; font-style: italic; line-height: 1.35; }
+
+        @media print {
+            body { background: none; padding: 0; }
+            .page { box-shadow: none; margin: 0; width: 100%; padding: 8mm 10mm; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="page">
+    <header>
+        <div>
+            <h1>Eugeny Semashko</h1>
+            <p class="job-title">DevOps Engineer</p>
+        </div>
+        <div class="contact">
+            <p>Minsk, Belarus • <a href="mailto:eugensema1@gmail.com">eugensema1@gmail.com</a></p>
+            <p><a href="https://www.linkedin.com/semashkoeugeni/">linkedin.com/in/semashkoeugeni</a></p>
+            <p><a href="https://cv-eugeny-semashko.vercel.app">cv-eugeny-semashko.vercel.app</a></p>
+        </div>
+    </header>
+
+    <div class="summary">
+        DevOps Engineer with <strong>4.5 years of experience</strong> in architecting cloud infrastructures and automating delivery pipelines. Proficient in <strong>AWS Ecosystem (ECS, EC2)</strong>, <strong>Terraform</strong>, and <strong>Docker/Swarm</strong>. Strong background in Infrastructure Design, Mentoring, and establishing <strong>DevSecOps</strong> standards in data-driven environments.
+    </div>
+
+    <div class="grid">
+        <div class="main">
+            <section>
+                <h2>Professional Experience</h2>
+
+                <div class="exp-item">
+                    <div class="exp-header">
+                        <span>Sport Data</span>
+                        <span style="font-weight: 500; font-size: 12px; color: var(--accent);">Dec 2025 – Present</span>
+                    </div>
+                    <p class="role">DevOps Engineer</p>
+                    <p class="comp-info">Data analytics and real-time sport statistics provider</p>
+                    <ul>
+                        <li><strong>Infrastructure Migration:</strong> Leading the transition from legacy <strong>EC2 + Docker Swarm</strong> setups to modern <strong>AWS ECS</strong> architecture.</li>
+                        <li><strong>Platform Reliability:</strong> Maintaining and scaling infrastructure for real-time statistics services.</li>
+                        <li><strong>Automation:</strong> Streamlining deployment pipelines for high-traffic data processing.</li>
+                    </ul>
+                </div>
+
+                <div class="exp-item">
+                    <div class="exp-header">
+                        <span>Syberry</span>
+                        <span style="font-weight: 400; font-size: 12px; color: var(--text-light);">Jan 2022 – Sep 2025</span>
+                    </div>
+                    <p class="role">DevOps Engineer / Mentor</p>
+                    <p class="comp-info">Software engineering company (250+ employees)</p>
+                    <ul>
+                        <li><strong>Infrastructure-as-Code:</strong> Orchestrated migration of legacy services to <strong>AWS ECS Fargate</strong> and supported existing ECS-native architectures.</li>
+                        <li><strong>Architecture Design:</strong> Developed comprehensive infrastructure diagrams and technical documentation.</li>
+                        <li><strong>Mentorship:</strong> Mentored Academy teams on DevOps practices, Dockerization, and CI/CD standards.</li>
+                        <li><strong>FinOps:</strong> Achieved **35% cloud cost reduction** using Spot Instances and lifecycle automation.</li>
+                        <li><strong>Security:</strong> Integrated automated vulnerability scanning (SonarQube, Trivy).</li>
+                    </ul>
+                </div>
+
+                <div class="exp-item">
+                    <div class="exp-header">
+                        <span>XB Software</span>
+                        <span style="font-weight: 400; font-size: 12px; color: var(--text-light);">Jun 2021 – Dec 2021</span>
+                    </div>
+                    <p class="role">DevOps Engineer</p>
+                    <ul>
+                        <li>Designed CI/CD workflows for multi-cloud deployments (AWS/GCP/Azure).</li>
+                        <li>Standardized server provisioning through <strong>Ansible</strong> and Terraform.</li>
+                    </ul>
+                </div>
+
+                <div class="exp-item" style="border-top: 1px solid #eee; padding-top: 10px;">
+                    <div class="exp-header">
+                        <span>SoftTech</span>
+                        <span style="font-weight: 400; font-size: 12px; color: var(--text-light);">Jul 2015 – Dec 2019</span>
+                    </div>
+                    <p class="role">Deputy Head of Department</p>
+                    <p class="comp-info">Technology solutions provider (Management Background)</p>
+                    <ul>
+                        <li>Leading a team of 10 people.</li>
+                        <li>Developing and implementing strategies to improve development processes.</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <div class="side">
+            <section class="side-section">
+                <h2>Technical Stack</h2>
+
+                <div class="skill-cat">
+                    <strong>Cloud & Orchestration</strong>
+                    <div class="skill-tags">
+                        <span>AWS (ECS/EC2)</span> <span>Docker Swarm</span> <span>Docker</span> <span>Azure</span> <span>Kubernetes</span> <span>Virtualization</span>
+                    </div>
+                </div>
+
+                <div class="skill-cat">
+                    <strong>IaC & Config Mgmt</strong>
+                    <div class="skill-tags">
+                        <span>Terraform</span> <span>Terragrunt</span> <span>Ansible</span> <span>Infrastructure Design</span>
+                    </div>
+                </div>
+
+                <div class="skill-cat">
+                    <strong>CI/CD & Security</strong>
+                    <div class="skill-tags">
+                        <span>GitHub Actions</span> <span>Bitbucket</span> <span>GitLab CI/CD</span> <span>Jenkins</span> <span>SonarQube</span> <span>Trivy</span>
+                    </div>
+                </div>
+
+                <div class="skill-cat">
+                    <strong>Observability & Data</strong>
+                    <div class="skill-tags">
+                        <span>Prometheus</span> <span>Grafana</span> <span>Loki (PGL)</span> <span>SQL</span>
+                    </div>
+                </div>
+
+                <div class="skill-cat">
+                    <strong>Networking & OS</strong>
+                    <div class="skill-tags">
+                        <span>Nginx</span> <span>Traefik</span> <span>Linux/Windows</span> <span>Bash</span> <span>Shell Scripting</span> <span>Python</span>
+                    </div>
+                </div>
+
+                <div class="skill-cat">
+                    <strong>Soft Skills & Admin</strong>
+                    <div class="skill-tags">
+                        <span>Mentorship</span> <span>Agile</span> <span>Network Admin</span> <span>Systems Admin</span> <span>Load Balancing</span>
+                    </div>
+                </div>
+
+                <div class="skill-cat">
+                    <strong>Languages</strong>
+                    <div class="skill-tags">
+                        <span>English (B1)</span> <span>Russian (Native)</span>
+                    </div>
+                </div>
+            </section>
+
+            <div class="future-focus">
+                <strong>Learning Path (2026):</strong>
+                <p>Mastering Kubernetes at scale, Cloud Security (HashiCorp Vault), and Golang for platform automation.</p>
+            </div>
+
+            <section class="side-section" style="margin-top: 20px;">
+                <h2>Education</h2>
+                <div style="font-size: 11.5px; line-height: 1.4;">
+                    <strong>BSUIR</strong>, Minsk<br>
+                    Informatics & Radioelectronics<br>
+                    <span style="color: var(--text-light)">2015 - 2020</span>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
