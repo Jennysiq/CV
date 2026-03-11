@@ -20,7 +20,7 @@
             font-family: 'Inter', sans-serif;
             background: #f1f5f9;
             margin: 0;
-            padding: 25px 0;
+            padding: 20px 0;
             color: var(--text);
             line-height: 1.45;
             -webkit-print-color-adjust: exact;
@@ -31,53 +31,81 @@
             width: 210mm;
             min-height: 297mm;
             margin: 0 auto;
-            padding: 35px 45px;
+            padding: 34px 44px;
             box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
         }
 
         header {
             border-bottom: 2px solid #e2e8f0;
-            padding-bottom: 20px;
-            margin-bottom: 20px;
+            padding-bottom: 16px;
+            margin-bottom: 16px;
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
         }
 
-        h1 { font-size: 32px; margin: 0; color: var(--primary); font-weight: 700; }
-        .job-title { font-size: 19px; color: var(--accent); font-weight: 600; margin-top: 4px; }
+        h1 { font-size: 30px; margin: 0; color: var(--primary); font-weight: 700; }
+        .job-title { font-size: 18px; color: var(--accent); font-weight: 600; margin-top: 3px; }
 
-        .contact { text-align: right; font-size: 13px; color: var(--text); }
+        .contact { text-align: right; font-size: 12.5px; color: var(--text); }
         .contact p { margin: 2px 0; }
         .contact a { color: var(--accent); text-decoration: none; font-weight: 500; }
 
-        .summary { font-size: 12.5px; margin-bottom: 20px; background: #eff6ff; padding: 12px; border-radius: 6px; border-left: 4px solid var(--accent); line-height: 1.55; }
+        .lang-switch {
+            display: inline-flex;
+            align-items: center;
+            background: #f1f5f9;
+            border: 1px solid #cbd5e1;
+            border-radius: 5px;
+            padding: 1px 4px;
+            font-size: 10.5px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        .lang-switch a {
+            color: #64748b;
+            text-decoration: none;
+            padding: 1px 6px;
+            border-radius: 3px;
+            transition: all 0.2s;
+        }
+        .lang-switch a.active {
+            background: var(--accent);
+            color: white;
+        }
+        .lang-switch a:hover:not(.active) {
+            color: var(--primary);
+        }
+        .lang-sep {
+            color: #cbd5e1;
+            margin: 0 1px;
+            font-size: 10px;
+        }
 
-        .grid { display: grid; grid-template-columns: 1.8fr 1.2fr; gap: 30px; }
+        .summary { font-size: 12px; margin-bottom: 20px; background: #eff6ff; padding: 12px 16px; border-radius: 6px; border-left: 4px solid var(--accent); line-height: 1.6; }
 
-        h2 { font-size: 12.5px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--primary); border-bottom: 1px solid #e2e8f0; padding-bottom: 5px; margin-bottom: 12px; font-weight: 700; }
+        .grid { display: grid; grid-template-columns: 1.8fr 1.2fr; gap: 28px; }
+
+        h2 { font-size: 12.5px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--primary); border-bottom: 1px solid #e2e8f0; padding-bottom: 5px; margin-bottom: 14px; font-weight: 700; }
 
         .exp-item { margin-bottom: 18px; }
         .exp-header { display: flex; justify-content: space-between; font-weight: 700; font-size: 15px; color: var(--primary); }
         .role { font-weight: 600; color: var(--accent); font-size: 13.5px; margin: 2px 0; }
-        .comp-info { font-size: 11px; color: var(--text-light); font-style: italic; margin-bottom: 5px; }
+        .comp-info { font-size: 11px; color: var(--text-light); font-style: italic; margin-bottom: 6px; }
 
-        ul { margin: 4px 0; padding-left: 15px; }
-        li { margin-bottom: 3px; font-size: 12.5px; color: var(--text); }
+        ul { margin: 4px 0; padding-left: 16px; }
+        li { margin-bottom: 4px; font-size: 12px; color: var(--text); line-height: 1.45; }
 
-        .side-section { margin-bottom: 18px; }
-        .skill-cat { margin-bottom: 10px; }
+        .side-section { margin-bottom: 16px; }
+        .skill-cat { margin-bottom: 12px; }
         .skill-cat strong { display: block; font-size: 10px; text-transform: uppercase; color: var(--text-light); margin-bottom: 4px; letter-spacing: 0.05em; }
         .skill-tags { display: flex; flex-wrap: wrap; gap: 4px; }
-        .skill-tags span { background: #f1f5f9; padding: 2px 7px; border-radius: 4px; font-size: 11px; color: #1e293b; border: 1px solid #e2e8f0; font-weight: 500; }
-
-        .future-focus { background: #faf5ff; padding: 10px; border-radius: 6px; border-left: 3px solid #a855f7; margin-top: 15px; }
-        .future-focus strong { font-size: 10px; color: #7e22ce; display: block; margin-bottom: 4px; text-transform: uppercase; }
-        .future-focus p { margin: 0; font-size: 10.5px; color: #581c87; font-style: italic; line-height: 1.35; }
+        .skill-tags span { background: #f1f5f9; padding: 3px 7px; border-radius: 4px; font-size: 11px; color: #1e293b; border: 1px solid #e2e8f0; font-weight: 500; }
 
         @media print {
             body { background: none; padding: 0; }
-            .page { box-shadow: none; margin: 0; width: 100%; padding: 8mm 10mm; }
+            .page { box-shadow: none; margin: 0; width: 100%; padding: 6mm 8mm; }
+            .lang-switch { display: none; }
         }
     </style>
 </head>
@@ -90,14 +118,19 @@
             <p class="job-title">DevOps Engineer</p>
         </div>
         <div class="contact">
+            <div class="lang-switch">
+                <a href="/" class="active">EN</a>
+                <span class="lang-sep">|</span>
+                <a href="/ru.html">RU</a>
+            </div>
             <p>Minsk, Belarus • <a href="mailto:eugensema1@gmail.com">eugensema1@gmail.com</a></p>
-            <p><a href="https://www.linkedin.com/semashkoeugeni/">linkedin.com/in/semashkoeugeni</a></p>
+            <p><a href="https://www.linkedin.com/in/semashkoeugeni/">linkedin.com/in/semashkoeugeni</a></p>
             <p><a href="https://cv-eugeny-semashko.vercel.app">cv-eugeny-semashko.vercel.app</a></p>
         </div>
     </header>
 
     <div class="summary">
-        DevOps Engineer with <strong>4.5 years of experience</strong> in architecting cloud infrastructures and automating delivery pipelines. Proficient in <strong>AWS Ecosystem (ECS, EC2)</strong>, <strong>Terraform</strong>, and <strong>Docker/Swarm</strong>. Strong background in Infrastructure Design, Mentoring, and establishing <strong>DevSecOps</strong> standards in data-driven environments.
+        DevOps Engineer with 4.5+ years of experience maintaining and scaling cloud and container infrastructure (Kubernetes, AWS, Docker). Practical background in building GitLab CI/CD pipelines, Infrastructure as Code (Terraform, Ansible), and setting up observability with Prometheus, Grafana, and Loki. Experienced in web troubleshooting (Nginx, Cloudflare, MySQL, Redis) and automation scripting with Python and Bash.
     </div>
 
     <div class="grid">
@@ -111,11 +144,12 @@
                         <span style="font-weight: 500; font-size: 12px; color: var(--accent);">Dec 2025 – Present</span>
                     </div>
                     <p class="role">DevOps Engineer</p>
-                    <p class="comp-info">Data analytics and real-time sport statistics provider</p>
+                    <p class="comp-info">Data analytics & real-time sports statistics platform</p>
                     <ul>
-                        <li><strong>Infrastructure Migration:</strong> Leading the transition from legacy <strong>EC2 + Docker Swarm</strong> setups to modern <strong>AWS ECS</strong> architecture.</li>
-                        <li><strong>Platform Reliability:</strong> Maintaining and scaling infrastructure for real-time statistics services.</li>
-                        <li><strong>Automation:</strong> Streamlining deployment pipelines for high-traffic data processing.</li>
+                        <li>Participated in decomposing a legacy monolith architecture and migrating services into microservices on Kubernetes.</li>
+                        <li>Configured Nginx reverse proxy, load balancing, and Cloudflare WAF to protect services from malicious bot traffic.</li>
+                        <li>Troubleshot and supported MySQL under peak loads: slow query analysis, connection tracking, and Redis caching.</li>
+                        <li>Maintained monitoring and logging with Prometheus, Grafana, and Loki; managed build and deploy pipelines in GitLab CI.</li>
                     </ul>
                 </div>
 
@@ -125,13 +159,14 @@
                         <span style="font-weight: 400; font-size: 12px; color: var(--text-light);">Jan 2022 – Sep 2025</span>
                     </div>
                     <p class="role">DevOps Engineer / Mentor</p>
-                    <p class="comp-info">Software engineering company (250+ employees)</p>
+                    <p class="comp-info">Software engineering & outsourcing company (250+ employees)</p>
                     <ul>
-                        <li><strong>Infrastructure-as-Code:</strong> Orchestrated migration of legacy services to <strong>AWS ECS Fargate</strong> and supported existing ECS-native architectures.</li>
-                        <li><strong>Architecture Design:</strong> Developed comprehensive infrastructure diagrams and technical documentation.</li>
-                        <li><strong>Mentorship:</strong> Mentored Academy teams on DevOps practices, Dockerization, and CI/CD standards.</li>
-                        <li><strong>FinOps:</strong> Achieved **35% cloud cost reduction** using Spot Instances and lifecycle automation.</li>
-                        <li><strong>Security:</strong> Integrated automated vulnerability scanning (SonarQube, Trivy).</li>
+                        <li>Provisioned and maintained cloud infrastructure in AWS (EC2, ECS, VPC, ALB, S3) using Terraform.</li>
+                        <li>Standardized GitLab CI pipelines for automated Docker container builds, testing, and staging deployments.</li>
+                        <li>Configured monitoring and alerting using Prometheus and Grafana, set up centralized application logging.</li>
+                        <li>Reduced AWS infrastructure costs by utilizing Spot instances and automating resource cleanup.</li>
+                        <li>Authored Python and Bash scripts for routine operations and built a Telegram bot for incident notifications.</li>
+                        <li>Mentored junior engineers and interns in the company's internal Academy.</li>
                     </ul>
                 </div>
 
@@ -142,21 +177,9 @@
                     </div>
                     <p class="role">DevOps Engineer</p>
                     <ul>
-                        <li>Designed CI/CD workflows for multi-cloud deployments (AWS/GCP/Azure).</li>
-                        <li>Standardized server provisioning through <strong>Ansible</strong> and Terraform.</li>
-                    </ul>
-                </div>
-
-                <div class="exp-item" style="border-top: 1px solid #eee; padding-top: 10px;">
-                    <div class="exp-header">
-                        <span>SoftTech</span>
-                        <span style="font-weight: 400; font-size: 12px; color: var(--text-light);">Jul 2015 – Dec 2019</span>
-                    </div>
-                    <p class="role">Deputy Head of Department</p>
-                    <p class="comp-info">Technology solutions provider (Management Background)</p>
-                    <ul>
-                        <li>Leading a team of 10 people.</li>
-                        <li>Developing and implementing strategies to improve development processes.</li>
+                        <li>Configured CI/CD pipelines (GitHub Actions, GitLab CI) to automate application builds and deployments.</li>
+                        <li>Provisioned and managed servers and networking across cloud environments using Terraform and Ansible.</li>
+                        <li>Containerized applications with Docker and supported monitoring setup.</li>
                     </ul>
                 </div>
             </section>
@@ -167,44 +190,37 @@
                 <h2>Technical Stack</h2>
 
                 <div class="skill-cat">
-                    <strong>Cloud & Orchestration</strong>
+                    <strong>Cloud & Containers</strong>
                     <div class="skill-tags">
-                        <span>AWS (ECS/EC2)</span> <span>Docker Swarm</span> <span>Docker</span> <span>Azure</span> <span>Kubernetes</span> <span>Virtualization</span>
+                        <span>Kubernetes</span> <span>Docker</span> <span>Docker Compose</span> <span>AWS (EC2, ECS, S3, VPC)</span>
                     </div>
                 </div>
 
                 <div class="skill-cat">
-                    <strong>IaC & Config Mgmt</strong>
+                    <strong>CI/CD & IaC</strong>
                     <div class="skill-tags">
-                        <span>Terraform</span> <span>Terragrunt</span> <span>Ansible</span> <span>Infrastructure Design</span>
+                        <span>GitLab CI/CD</span> <span>GitHub Actions</span> <span>Terraform</span> <span>Ansible</span> <span>Git</span>
                     </div>
                 </div>
 
                 <div class="skill-cat">
-                    <strong>CI/CD & Security</strong>
+                    <strong>Web & Networking</strong>
                     <div class="skill-tags">
-                        <span>GitHub Actions</span> <span>Bitbucket</span> <span>GitLab CI/CD</span> <span>Jenkins</span> <span>SonarQube</span> <span>Trivy</span>
+                        <span>Nginx</span> <span>Cloudflare</span> <span>TLS/SSL</span> <span>DNS</span> <span>Traefik</span>
                     </div>
                 </div>
 
                 <div class="skill-cat">
-                    <strong>Observability & Data</strong>
+                    <strong>Monitoring & Logs</strong>
                     <div class="skill-tags">
-                        <span>Prometheus</span> <span>Grafana</span> <span>Loki (PGL)</span> <span>SQL</span>
+                        <span>Prometheus</span> <span>Grafana</span> <span>Loki</span> <span>Alertmanager</span>
                     </div>
                 </div>
 
                 <div class="skill-cat">
-                    <strong>Networking & OS</strong>
+                    <strong>Databases & Scripting</strong>
                     <div class="skill-tags">
-                        <span>Nginx</span> <span>Traefik</span> <span>Linux/Windows</span> <span>Bash</span> <span>Shell Scripting</span> <span>Python</span>
-                    </div>
-                </div>
-
-                <div class="skill-cat">
-                    <strong>Soft Skills & Admin</strong>
-                    <div class="skill-tags">
-                        <span>Mentorship</span> <span>Agile</span> <span>Network Admin</span> <span>Systems Admin</span> <span>Load Balancing</span>
+                        <span>MySQL</span> <span>Redis</span> <span>Python</span> <span>Bash / Shell</span> <span>Linux</span>
                     </div>
                 </div>
 
@@ -216,12 +232,7 @@
                 </div>
             </section>
 
-            <div class="future-focus">
-                <strong>Learning Path (2026):</strong>
-                <p>Mastering Kubernetes at scale, Cloud Security (HashiCorp Vault), and Golang for platform automation.</p>
-            </div>
-
-            <section class="side-section" style="margin-top: 20px;">
+            <section class="side-section" style="margin-top: 24px;">
                 <h2>Education</h2>
                 <div style="font-size: 11.5px; line-height: 1.4;">
                     <strong>BSUIR</strong>, Minsk<br>
